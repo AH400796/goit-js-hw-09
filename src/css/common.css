@@ -16,3 +16,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.switcher_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 100px;
+}
+
+.timer_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.switcher_wrapper button {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.value {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 32px;
+  text-align: center;
+  border: 1px solid #6d8072;
+  border-radius: 5px;
+  background-color: rgb(145, 240, 153);
+}
