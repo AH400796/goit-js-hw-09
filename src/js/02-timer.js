@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import Notiflix from 'notiflix';
 
 const { startBtn, ouputDays, ouputHours, ouputMinutes, ouputSeconds } = {
   startBtn: document.querySelector('[data-start]'),
@@ -26,7 +27,7 @@ const options = {
       startBtn.removeAttribute('disabled');
     } else {
       setAtrrDisabled();
-      alert('Please choose a date in the future');
+      Notiflix.Notify.failure('Please choose a date in the future');
     }
   },
 };
@@ -51,6 +52,7 @@ function onClickStart() {
       clearInterval(timerId);
       setAtrrDisabled();
       isClicked = false;
+      Notiflix.Notify.success('The time has come!');
     }
     time = convertMs(deltaTime);
     setTimer();
