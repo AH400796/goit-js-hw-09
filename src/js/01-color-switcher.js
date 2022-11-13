@@ -17,7 +17,6 @@ function onClickStart() {
 
 function onClickStop() {
   toggleBtnDisableStatus();
-  document.body.removeAttribute('style');
   clearInterval(timerId);
 }
 
