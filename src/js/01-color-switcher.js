@@ -1,6 +1,6 @@
 const { startBtn, stopBtn, buttons } = {
-  startBtn: document.querySelector('[data-start]'),
-  stopBtn: document.querySelector('[data-stop]'),
+  startBtn: document.querySelector('button[data-start]'),
+  stopBtn: document.querySelector('button[data-stop]'),
 };
 let timerId = null;
 
